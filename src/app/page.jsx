@@ -92,7 +92,7 @@ const smallServices = [
    <>
    <HomeNavbar/>
    {/* hero section start */}
- <section className="relative overflow-hidden bg-white">
+ <section className="relative overflow-hidden bg-white ">
       <div className="relative min-h-screen overflow-hidden bg-[url('/images/hero-section.jpg')] bg-cover bg-center">
         <div className="absolute inset-0" />
 
@@ -128,7 +128,7 @@ const smallServices = [
           </div>
         </div>
 
-        <div className="absolute bottom-[30px] left-[25%] z-30 hidden rounded-2xl bg-white px-5 py-4 shadow-2xl shadow-black/20 lg:block">
+        <div className="absolute bottom-[30px] left-[25%] z-30 hidden animate-bounce-slow  rounded-2xl bg-white px-5 py-4 shadow-xl shadow-black/10 lg:block">
           <div className="flex items-center gap-4">
             <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-white">
               <FiTrendingUp className="text-xl" />
@@ -147,7 +147,7 @@ const smallServices = [
           </div>
         </div>
 
-        <div className="absolute bottom-[10px] right-[25%] z-30 hidden rounded-2xl bg-white px-5 py-4 shadow-2xl shadow-black/20 lg:block">
+        <div className="absolute bottom-[10px] right-[25%] z-30 hidden animate-bounce-slow  rounded-2xl bg-white px-5 py-4 shadow-xl shadow-black/10 lg:block">
           <div className="flex items-center gap-4">
             <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-white">
               <FiBriefcase className="text-xl" />
@@ -294,7 +294,7 @@ const smallServices = [
         </div>
       </div>
     </section>
-    {/* service section start */}
+    {/* QA section start */}
     <section className="relative overflow-hidden bg-white px-6 py-24">
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl" />
       <div className="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-violet-200/40 blur-3xl" />
@@ -333,7 +333,7 @@ const smallServices = [
         </div>
       </div>
     </section>
-    {/* service section end */} 
+    {/* QA section end */} 
   
 
      {/* footer start */}
