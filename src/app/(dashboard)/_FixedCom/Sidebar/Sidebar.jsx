@@ -26,32 +26,32 @@ const userLinks = [
   },
   {
     name: "Profile",
-    href: "/dashboard/profile",
+    href: "/profile",
     icon: FiUser,
   },
   {
     name: "Jobs",
-    href: "/dashboard/jobs",
+    href: "/jobs",
     icon: FiBriefcase,
   },
   {
     name: "Courses",
-    href: "/dashboard/courses",
+    href: "/courses",
     icon: FiBookOpen,
   },
   {
     name: "CV Generator",
-    href: "/dashboard/cv-generator",
+    href: "/cv-generator",
     icon: FiFileText,
   },
   {
     name: "AI Assistant",
-    href: "/dashboard/ai-assistant",
+    href: "/ai-assistant",
     icon: FiMessageSquare,
   },
   {
     name: "Settings",
-    href: "/dashboard/settings",
+    href: "/settings",
     icon: FiSettings,
   },
 ];
@@ -83,7 +83,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   const isActive = (href) => {
-    if (href === "/dashboard" || href === "/dashboard/admin") {
+    if (href === "/" || href === "/dashboard/admin") {
       return pathname === href;
     }
 

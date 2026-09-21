@@ -1,5 +1,5 @@
-import Sidebar from "./_DashboardCom/Sidebar/Sidebar";
-import Topbar from "./_DashboardCom/Topbar/Topbar";
+import Sidebar from "./_FixedCom/Sidebar/Sidebar";
+import Topbar from "./_FixedCom/Topbar/Topbar";
 
 export default function DashboardLayout({ children }) {
   return (

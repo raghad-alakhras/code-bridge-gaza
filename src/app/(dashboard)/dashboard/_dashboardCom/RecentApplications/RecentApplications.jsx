@@ -33,14 +33,14 @@ export default function RecentApplications() {
     <section className="overflow-hidden rounded-[28px] border border-slate-200 bg-white">
       
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-slate-100 px-8 py-7">
-        <h2 className="text-[23px] font-extrabold text-slate-950">
+      <div className="flex items-center justify-between border-b border-slate-100 px-7 py-7">
+        <h2 className="font-extrabold text-slate-950">
           Recent Applications
         </h2>
 
         <Link
           href="/dashboard/jobs"
-          className="flex items-center gap-2 text-[16px] font-semibold text-blue-600 transition hover:text-violet-600"
+          className="flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-violet-600"
         >
           View All
           <FiArrowRight className="text-lg" />
@@ -61,18 +61,18 @@ export default function RecentApplications() {
             
             {/* Application Info */}
             <div className="min-w-0 flex-1">
-              <h3 className="text-[18px] font-bold text-slate-950">
+              <h3 className="text-[15px] font-bold text-slate-950">
                 {application.title}
               </h3>
 
-              <p className="mt-1 text-[15px] font-medium text-slate-500">
+              <p className="mt-1 text-[12px] font-medium text-slate-500">
                 {application.company}
               </p>
             </div>
 
             {/* Status */}
             <span
-              className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold ${
+              className={`shrink-0 rounded-full border px-3 py-1.5 text-[11px] font-semibold ${
                 statusStyles[application.status]
               }`}
             >
@@ -82,7 +82,7 @@ export default function RecentApplications() {
             {/* View */}
             <Link
               href={`/dashboard/jobs/${application.id}`}
-              className="shrink-0 text-[16px] font-semibold text-blue-600 transition hover:text-violet-600"
+              className="shrink-0 text-[13px] font-semibold text-blue-600 transition hover:text-violet-600"
             >
               View
             </Link>

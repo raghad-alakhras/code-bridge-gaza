@@ -10,12 +10,12 @@ import {
 
 const pageTitles = {
   "/dashboard": "Dashboard",
-  "/dashboard/profile": "Profile",
-  "/dashboard/jobs": "Jobs",
-  "/dashboard/courses": "Courses",
-  "/dashboard/cv-generator": "CV Generator",
-  "/dashboard/ai-assistant": "AI Assistant",
-  "/dashboard/settings": "Settings",
+  "/profile": "Profile",
+  "/jobs": "Jobs",
+  "/courses": "Courses",
+  "/cv-generator": "CV Generator",
+  "/ai-assistant": "AI Assistant",
+  "/settings": "Settings",
   "/dashboard/admin": "Admin Dashboard",
   "/dashboard/admin/users": "Users Management",
   "/dashboard/admin/jobs": "Jobs Management",

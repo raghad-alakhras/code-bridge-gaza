@@ -40,7 +40,7 @@ const actions = [
 export default function QuickActions() {
   return (
     <section>
-      <h2 className="mb-5 text-2xl font-extrabold text-slate-950">
+      <h2 className="mb-5 text-xl font-extrabold text-slate-950">
         Quick Actions
       </h2>
 
@@ -51,20 +51,20 @@ export default function QuickActions() {
           return (
             <div
               key={action.title}
-              className="flex items-center gap-5 rounded-[24px] border border-slate-200 bg-white px-6 py-5"
+              className="flex items-center gap-5 rounded-xl border border-slate-200 bg-white px-4 py-3.5 hover:shadow transition-all duration-300 hover:scale-105"
             >
               {/* Icon */}
-              <div className="flex h-[58px] w-[58px] shrink-0 items-center justify-center rounded-[18px] bg-gradient-to-br from-blue-500 to-violet-600 text-white shadow-lg shadow-violet-200">
-                <Icon className="text-[27px]" />
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 text-white shadow-lg shadow-violet-200">
+                <Icon className="text-[18px]" />
               </div>
 
               {/* Text */}
               <div className="min-w-0 flex-1">
-                <h3 className="text-[18px] font-extrabold text-slate-950">
+                <h3 className="text-[13px] font-extrabold text-slate-950">
                   {action.title}
                 </h3>
 
-                <p className="mt-1 truncate text-[15px] font-medium text-slate-500">
+                <p className="mt-1 truncate text-[10px] font-medium text-slate-500">
                   {action.description}
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function QuickActions() {
               {/* Button */}
               <Link
                 href={action.href}
-                className="shrink-0 rounded-2xl bg-gradient-to-r from-blue-500 to-violet-600 px-6 py-3 text-sm font-bold text-white shadow-md shadow-violet-200 transition hover:scale-[1.03]"
+                className="shrink-0 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 px-4 py-1.5 text-[12px] font-medium text-white shadow-md shadow-violet-200 transition hover:scale-[1.03]"
               >
                 {action.buttonText}
               </Link>
