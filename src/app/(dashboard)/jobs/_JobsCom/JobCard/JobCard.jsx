@@ -13,6 +13,7 @@ export default function JobCard({
   salary,
   skills = [],
   postedAt,
+  onViewDetails,
 }) {
   return (
     <article className="rounded-[22px] border border-slate-200 bg-white px-6 py-6 shadow-sm transition-all duration-200 hover:border-violet-200 hover:shadow-md">
@@ -88,6 +89,7 @@ export default function JobCard({
 
         <button
           type="button"
+          onClick={onViewDetails}
           className="h-9 rounded-xl border border-violet-600 bg-white px-4 text-[12px] font-bold text-violet-600 transition hover:bg-violet-50"
         >
           View Details

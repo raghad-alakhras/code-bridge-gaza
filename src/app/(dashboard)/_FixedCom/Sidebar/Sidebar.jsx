@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import { useState } from "react";
 import Logo from "../../../_Components/Logo/Logo";
 
 import {
@@ -81,7 +81,7 @@ const adminLinks = [
 
 export default function Sidebar() {
   const pathname = usePathname();
-
+    const [open, setOpen] = useState(false);
   const isActive = (href) => {
     if (href === "/" || href === "/dashboard/admin") {
       return pathname === href;
@@ -90,8 +90,57 @@ export default function Sidebar() {
     return pathname.startsWith(href);
   };
 
-  return (
-    <aside className="hidden md:flex h-screen w-[250px] shrink-0 flex-col bg-gradient-to-b from-[#263F91] via-[#4143A4] to-[#6746AC] text-white">
+   return (
+  <>
+    {/* Mobile Toggle Button */}
+    <button
+      onClick={() => setOpen(!open)}
+      className="
+        fixed left-0 top-1/2 z-50
+        flex h-10 w-8 items-center justify-center
+        rounded-r-xl
+        bg-[#493CB2]
+        text-white
+        shadow-lg
+        lg:hidden
+      "
+    >
+      {open ? "‹" : "›"}
+    </button>
+
+
+    {/* Mobile Overlay */}
+    {open && (
+      <div
+        onClick={() => setOpen(false)}
+        className="
+          fixed inset-0 z-40
+          bg-black/30
+          lg:hidden
+        "
+      />
+    )}
+
+
+    {/* Sidebar */}
+    <aside
+      className={`
+        h-screen w-[250px]
+        shrink-0
+        flex-col
+        bg-gradient-to-b from-[#263F91] via-[#4143A4] to-[#6746AC]
+        text-white
+
+        fixed left-0 top-0 z-50
+        transition-transform duration-300 ease-in-out
+
+        ${open ? "translate-x-0" : "-translate-x-full"}
+
+        lg:static
+        lg:flex
+        lg:translate-x-0
+      `}
+    >
 
       {/* Scrollable Sidebar Content */}
       <div className="flex-1 overflow-y-auto px-5 pt-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -114,6 +163,7 @@ export default function Sidebar() {
               <Link
                 key={item.name}
                 href={item.href}
+                onClick={() => setOpen(false)}
                 className={`flex h-9 my-1 items-center gap-4 rounded-2xl px-4 text-[13px] font-medium transition-all duration-200 ${
                   active
                     ? "bg-[#F8F8FC] font-semibold text-[#493CB2]"
@@ -146,6 +196,7 @@ export default function Sidebar() {
                 <Link
                   key={item.name}
                   href={item.href}
+                  onClick={() => setOpen(false)}
                   className={`flex h-9 my-1 items-center gap-4 rounded-2xl px-4 text-[13px] font-medium transition-all duration-200 ${
                     active
                       ? "bg-[#F8F8FC] font-semibold text-[#493CB2]"
@@ -186,5 +237,6 @@ export default function Sidebar() {
         </div>
       </div>
     </aside>
+    </>
   );
 }

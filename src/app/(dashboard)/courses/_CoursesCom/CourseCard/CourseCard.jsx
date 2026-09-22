@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
-
+import Link from "next/link";
 const levelStyles = {
   Beginner: "border-emerald-200 bg-emerald-50 text-emerald-600",
   Intermediate: "border-blue-200 bg-blue-50 text-blue-600",
@@ -59,8 +59,8 @@ export default function CourseCard({
         {/* Actions */}
         <div className="mt-3 space-y-3">
 
-          <button
-            type="button"
+          <Link
+            href="/courses/courseDetails"
             className={`flex h-11 w-full items-center justify-center gap-3 rounded-xl text-[13px] font-bold transition cursor-pointer ${
               showEnroll
                 ? "bg-gradient-to-r from-blue-500 to-violet-600 text-white hover:shadow-md"
@@ -69,7 +69,7 @@ export default function CourseCard({
           >
             View Course
             <FiArrowRight className="text-[18px]" />
-          </button>
+          </Link>
 
           {showEnroll && (
             <button

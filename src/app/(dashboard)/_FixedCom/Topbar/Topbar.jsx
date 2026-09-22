@@ -13,6 +13,7 @@ const pageTitles = {
   "/profile": "Profile",
   "/jobs": "Jobs",
   "/courses": "Courses",
+  "/courses/courseDetails": "Courses",
   "/cv-generator": "CV Generator",
   "/ai-assistant": "AI Assistant",
   "/settings": "Settings",
