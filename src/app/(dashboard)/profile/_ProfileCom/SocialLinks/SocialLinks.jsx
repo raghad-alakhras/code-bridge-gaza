@@ -31,9 +31,9 @@ const socialLinks = [
 
 export default function SocialLinks() {
   return (
-    <section className="rounded-[30px] border border-slate-100 bg-white px-10 py-9 shadow-sm">
+    <section className="rounded-[30px] border border-slate-100 bg-white p-8 shadow-sm">
       
-      <h2 className="text-[24px] font-extrabold text-slate-950">
+      <h2 className="text-2xl font-bold text-slate-950">
         Follow Me
       </h2>
 
@@ -46,9 +46,9 @@ export default function SocialLinks() {
               key={social.name}
               href={social.href}
               aria-label={social.name}
-              className="flex h-[72px] w-[72px] items-center justify-center rounded-[18px] border border-violet-200 bg-[#FAF9FF] text-slate-500 transition-all duration-200 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-600 hover:-translate-y-1"
+              className="flex size-13 items-center justify-center rounded-full border border-violet-200 bg-[#FAF9FF] text-slate-500 transition-all duration-200 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-600 hover:-translate-y-1"
             >
-              <Icon className="text-[30px]" />
+              <Icon className="text-2xl" />
             </Link>
           );
         })}

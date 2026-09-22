@@ -91,7 +91,7 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="flex h-screen w-[250px] shrink-0 flex-col bg-gradient-to-b from-[#263F91] via-[#4143A4] to-[#6746AC] text-white">
+    <aside className="hidden md:flex h-screen w-[250px] shrink-0 flex-col bg-gradient-to-b from-[#263F91] via-[#4143A4] to-[#6746AC] text-white">
 
       {/* Scrollable Sidebar Content */}
       <div className="flex-1 overflow-y-auto px-5 pt-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
