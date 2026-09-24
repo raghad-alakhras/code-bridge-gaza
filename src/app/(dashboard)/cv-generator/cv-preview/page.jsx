@@ -168,18 +168,18 @@ const handleDownloadPDF = async () => {
         >
 
 
-          <h1 className="text-[46px] font-extrabold">
+          <h1 className="text-3xl font-extrabold">
             Ahmed Hassan
           </h1>
 
 
-          <p className="mt-2 text-[24px] font-semibold text-white/90">
+          <p className="mt-2 text-xl font-semibold text-white/90">
             Frontend Developer
           </p>
 
 
 
-          <div className="mt-8 flex flex-wrap gap-8 text-[17px]">
+          <div className="mt-8 flex flex-wrap gap-8 text-[16px]">
 
 
             <div className="flex items-center gap-3">
@@ -211,7 +211,7 @@ const handleDownloadPDF = async () => {
   {/* Professional Summary */}
   <section className="mb-12">
 
-    <h2 className="text-[28px] font-extrabold text-slate-950">
+    <h2 className="text-xl font-extrabold text-slate-950">
       Professional Summary
     </h2>
 
@@ -234,7 +234,7 @@ const handleDownloadPDF = async () => {
   {/* Work Experience */}
   <section className="mb-12">
 
-    <h2 className="text-[28px] font-extrabold text-slate-950">
+    <h2 className="text-xl font-extrabold text-slate-950">
       Work Experience
     </h2>
 
@@ -250,11 +250,11 @@ const handleDownloadPDF = async () => {
 
         <div>
 
-          <h3 className="text-[22px] font-bold text-slate-950">
+          <h3 className="text-[20px] font-bold text-slate-950">
             Frontend Developer
           </h3>
 
-          <p className="mt-1 text-[18px] font-semibold text-[#6746AC]">
+          <p className="mt-1 text-[14px] font-semibold text-[#6746AC]">
             TechPalestine
           </p>
 
@@ -263,7 +263,7 @@ const handleDownloadPDF = async () => {
 
         <div className="text-right text-slate-600">
 
-          <p className="text-[18px]">
+          <p className="text-[16px]">
             2021 - Present
           </p>
 
@@ -306,7 +306,7 @@ const handleDownloadPDF = async () => {
 {/* Education */}
 <section className="mb-12">
 
-  <h2 className="text-[28px] font-extrabold text-slate-950">
+  <h2 className="text-xl font-extrabold text-slate-950">
     Education
   </h2>
 
@@ -318,11 +318,11 @@ const handleDownloadPDF = async () => {
 
     <div>
 
-      <h3 className="text-[22px] font-bold text-slate-950">
+      <h3 className="text-[20px] font-bold text-slate-950">
         Bachelor of Computer Science
       </h3>
 
-      <p className="mt-1 text-[18px] font-semibold text-[#6746AC]">
+      <p className="mt-1 text-[16px] font-semibold text-[#6746AC]">
         Islamic University of Gaza
       </p>
 
@@ -331,7 +331,7 @@ const handleDownloadPDF = async () => {
 
     <div className="text-right text-slate-600">
 
-      <p className="text-[18px]">
+      <p className="text-[16px]">
         2017 - 2021
       </p>
 
@@ -353,7 +353,7 @@ const handleDownloadPDF = async () => {
 {/* Technical Skills */}
 <section className="mb-12">
 
-  <h2 className="text-[28px] font-extrabold text-slate-950">
+  <h2 className="text-xl font-extrabold text-slate-950">
     Technical Skills
   </h2>
 
@@ -362,7 +362,7 @@ const handleDownloadPDF = async () => {
 
 
 
-  <div className="mt-8 grid grid-cols-2 gap-y-5 text-[18px] text-slate-600">
+  <div className="mt-8 grid grid-cols-2 gap-y-5 text-[16px] text-slate-600">
 
 
     <div className="flex items-center gap-3">
@@ -421,7 +421,7 @@ const handleDownloadPDF = async () => {
 {/* Languages */}
 <section className="mb-12">
 
-  <h2 className="text-[28px] font-extrabold text-slate-950">
+  <h2 className="text-xl font-extrabold text-slate-950">
     Languages
   </h2>
 
@@ -433,11 +433,11 @@ const handleDownloadPDF = async () => {
 
 
     <div>
-      <h3 className="text-[20px] font-bold text-slate-950">
+      <h3 className="text-[18px] font-bold text-slate-950">
         Arabic
       </h3>
 
-      <p className="mt-2 text-[17px] text-slate-600">
+      <p className="mt-2 text-[16px] text-slate-600">
         Native
       </p>
     </div>
@@ -445,11 +445,11 @@ const handleDownloadPDF = async () => {
 
 
     <div>
-      <h3 className="text-[20px] font-bold text-slate-950">
+      <h3 className="text-[18px] font-bold text-slate-950">
         English
       </h3>
 
-      <p className="mt-2 text-[17px] text-slate-600">
+      <p className="mt-2 text-[16px] text-slate-600">
         Fluent
       </p>
     </div>

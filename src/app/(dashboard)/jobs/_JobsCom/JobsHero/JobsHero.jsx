@@ -42,7 +42,7 @@ export default function JobsHero() {
             defaultValue=""
             className="h-11 cursor-pointer rounded-xl border-none bg-white px-2 text-[14px] font-medium text-slate-950 outline-none lg:col-span-2"
             >
-            <option value="">Job Type</option>
+            <option value="" disabled>Job Type</option>
             <option value="full-time">Full-time</option>
             <option value="part-time">Part-time</option>
             <option value="remote">Remote</option>
@@ -56,7 +56,7 @@ export default function JobsHero() {
             defaultValue=""
             className="h-11 cursor-pointer rounded-xl border-none bg-white px-2 text-[14px] font-medium text-slate-950 outline-none lg:col-span-2"
             >
-            <option value="">Location</option>
+            <option value="" disabled>Location</option>
             <option value="gaza-city">Gaza City</option>
             <option value="khan-younis">Khan Younis</option>
             <option value="rafah">Rafah</option>

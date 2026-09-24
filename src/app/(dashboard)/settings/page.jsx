@@ -5,7 +5,6 @@ import { useState } from "react";
 import SettingsTabs from "./_SettingsCom/SettingsTabs/SettingsTabs";
 import ProfileSettings from "./_SettingsCom/ProfileSettings/ProfileSettings";
 import AccountSettings from "./_SettingsCom/AccountSettings/AccountSettings";
-import PreferencesSettings from "./_SettingsCom/PreferencesSettings/PreferencesSettings";
 
 export default function SettingsPage() {
   const [activeTab, setActiveTab] = useState("Profile");
@@ -41,9 +40,7 @@ export default function SettingsPage() {
             <AccountSettings />
           )}
 
-          {activeTab === "Preferences" && (
-            <PreferencesSettings />
-            )}
+      
 
         </section>
 

@@ -33,14 +33,14 @@ export default function RecentApplications() {
     <section className="overflow-hidden rounded-[28px] border border-slate-200 bg-white">
       
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-slate-100 px-7 py-7">
+      <div className="sm:flex items-center justify-between border-b border-slate-100 px-7 py-7">
         <h2 className="font-extrabold text-slate-950">
           Recent Applications
         </h2>
 
         <Link
           href="/dashboard/jobs"
-          className="flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-violet-600"
+          className="mt-3 sm:mt-0 flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-violet-600"
         >
           View All
           <FiArrowRight className="text-lg" />

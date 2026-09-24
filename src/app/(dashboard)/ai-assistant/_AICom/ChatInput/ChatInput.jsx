@@ -20,28 +20,28 @@ export default function ChatInput() {
         {/* Microphone */}
         <button
           type="button"
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-500 transition hover:bg-slate-100 hover:text-violet-600"
+          className="flex size-9 md:size-14 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-500 transition hover:bg-slate-100 hover:text-violet-600"
           aria-label="Voice message"
         >
-          <FiMic className="text-[22px]" />
+          <FiMic className="text-md md:text-[20px]" />
         </button>
 
         {/* Attachment */}
         <button
           type="button"
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-500 transition hover:bg-slate-100 hover:text-violet-600"
+          className="flex size-9 md:size-14 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-500 transition hover:bg-slate-100 hover:text-violet-600"
           aria-label="Attach file"
         >
-          <FiPaperclip className="text-[22px]" />
+          <FiPaperclip className="text-md md:text-[20px]" />
         </button>
 
         {/* Send */}
         <button
           type="button"
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[16px] bg-gradient-to-br from-blue-500 to-violet-600 text-white shadow-lg shadow-violet-200 transition hover:scale-105"
+          className="flex size-9 md:size-14 shrink-0 items-center justify-center rounded-[16px] bg-gradient-to-br from-blue-500 to-violet-600 text-white shadow-lg shadow-violet-200 transition hover:scale-105"
           aria-label="Send message"
         >
-          <FiSend className="text-[24px]" />
+          <FiSend className="text-md md:text-[20px]" />
         </button>
 
       </div>

@@ -16,12 +16,12 @@ export default function JobCard({
   onViewDetails,
 }) {
   return (
-    <article className="rounded-[22px] border border-slate-200 bg-white px-6 py-6 shadow-sm transition-all duration-200 hover:border-violet-200 hover:shadow-md">
+    <article className="rounded-[22px] border border-slate-200 bg-white p-3 md:p-6 shadow-sm transition-all duration-200 hover:border-violet-200 hover:shadow-md">
 
       {/* Top Content */}
-      <div className="flex items-start justify-between gap-5">
+      <div className="flex items-start justify-between  md:gap-5">
 
-        <div className="flex min-w-0 gap-5">
+        <div className="flex min-w-0 gap-2 md:gap-5">
 
           {/* Company Logo */}
           <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-violet-600 text-[17px] font-bold text-white">
@@ -31,12 +31,12 @@ export default function JobCard({
           <div className="min-w-0">
 
             {/* Job Title */}
-            <h3 className="text-[18px] font-extrabold text-slate-950">
+            <h3 className="text-lg font-bold md:font-extrabold text-slate-950">
               {title}
             </h3>
 
             {/* Company */}
-            <p className="mt-1 text-[14px] font-medium text-slate-500">
+            <p className="mt-1 text-[14px]  text-slate-500">
               {company}
             </p>
 

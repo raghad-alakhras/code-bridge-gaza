@@ -7,16 +7,16 @@ export default function ProfileSettings() {
       {/* Profile Header */}
       <div className="flex flex-wrap items-center justify-between gap-6 border-b border-slate-200 pb-10">
 
-        <div className="flex items-center gap-7">
+        <div className="flex items-center gap-3 sm:gap-7">
 
           {/* Avatar */}
-          <div className="flex h-[80px] w-[80px] shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-[23px] font-bold text-white shadow-lg shadow-violet-200">
+          <div className="flex size-18 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-[23px] font-bold text-white shadow-lg shadow-violet-200">
             AH
           </div>
 
           {/* User Info */}
           <div>
-            <h2 className="text-[23px] font-extrabold text-slate-950">
+            <h2 className="text-lg font-extrabold text-slate-950">
               Ahmed Hassan
             </h2>
 

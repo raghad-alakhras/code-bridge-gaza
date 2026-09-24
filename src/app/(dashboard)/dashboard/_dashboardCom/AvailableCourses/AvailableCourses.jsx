@@ -31,14 +31,14 @@ export default function AvailableCourses() {
     <section className="overflow-hidden rounded-[28px] border border-slate-200 bg-white">
 
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-slate-100 px-7 py-7">
+      <div className="sm:flex items-center justify-between border-b border-slate-100 px-7 py-7">
         <h2 className=" font-extrabold text-slate-950">
           Available Courses
         </h2>
 
         <Link
           href="/dashboard/courses"
-          className="flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-violet-600"
+          className="mt-3 sm:mt-0 flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-violet-600"
         >
           View All Courses
           <FiArrowRight className="text-lg" />
@@ -51,10 +51,11 @@ export default function AvailableCourses() {
           {availableCourses.map((course) => (
             <div
               key={course.id}
-              className="flex items-center gap-5  rounded-[22px] border border-transparent px-5 py-4 transition-all duration-200 hover:border-[#D4E1FF] hover:bg-[#F7FAFF]"
+              className="md:flex items-center gap-5  rounded-[22px] border border-transparent px-5 py-4 transition-all duration-200 hover:border-[#D4E1FF] hover:bg-[#F7FAFF]"
             >
 
-              {/* Course Image */}
+            <div className="flex items-center gap-5">
+                {/* Course Image */}
               <div className="relative h-[72px] w-[72px] shrink-0 overflow-hidden rounded-[18px]">
                 <Image
                   src={course.image}
@@ -66,7 +67,7 @@ export default function AvailableCourses() {
 
               {/* Course Info */}
               <div className="min-w-0 flex-1">
-                <h3 className="text-[15px] font-extrabold text-slate-950 transition-colors duration-200 group-hover:text-blue-600">
+                <h3 className="sm:text-[15px] text-[13px] font-extrabold text-slate-950 transition-colors duration-200 group-hover:text-blue-600">
                   {course.title}
                 </h3>
 
@@ -82,9 +83,10 @@ export default function AvailableCourses() {
               </div>
 
               {/* View Course */}
+            </div>
               <Link
                 href={`/dashboard/courses/${course.id}`}
-                className="flex shrink-0 items-center gap-2 text-[12px] font-semibold text-blue-600 transition hover:text-violet-600  duration-200 group-hover:translate-x-1"
+                className="mt-3 md:mt-0 flex shrink-0 items-center gap-2 text-[12px] font-semibold text-blue-600 transition hover:text-violet-600  duration-200 group-hover:translate-x-1"
               >
                 View Course
                 <FiArrowRight className="text-lg" />

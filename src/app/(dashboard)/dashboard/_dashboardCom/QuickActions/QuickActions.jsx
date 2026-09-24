@@ -64,7 +64,7 @@ export default function QuickActions() {
                   {action.title}
                 </h3>
 
-                <p className="mt-1 truncate text-[10px] font-medium text-slate-500">
+                <p className="mt-1 truncate hidden sm:block text-[10px] font-medium text-slate-500">
                   {action.description}
                 </p>
               </div>

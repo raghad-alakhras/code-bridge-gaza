@@ -20,20 +20,20 @@ export default function AccountSettings() {
         {/* Change Password */}
         <button
           type="button"
-          className="flex w-full items-center justify-between rounded-[20px] bg-[#F7F9FC] px-6 py-5 text-left transition hover:bg-[#F2F5FB]"
+          className="flex w-full items-center justify-between rounded-[20px] bg-[#F7F9FC] px-4 py-3 md:px-6 md:py-5 text-left transition hover:bg-[#F2F5FB]"
         >
           <div className="flex items-center gap-5">
 
-            <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
-              <FiLock className="text-[20px]" />
+            <div className="flex size-10 md:size-13 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+              <FiLock className="text-sm md:text-[20px]" />
             </div>
 
             <div>
-              <h3 className="text-[15px] font-bold text-slate-950">
+              <h3 className="text-sm md:text-md font-bold text-slate-950">
                 Change Password
               </h3>
 
-              <p className="mt-1 text-[12px] font-medium text-slate-500">
+              <p className="mt-1 text-sm font-medium text-slate-500">
                 Update your password
               </p>
             </div>
@@ -50,16 +50,16 @@ export default function AccountSettings() {
         >
           <div className="flex items-center gap-5">
 
-            <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
-              <FiShield className="text-[20px]" />
+            <div className="flex size-10 md:size-13 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+              <FiShield className="text-sm md:text-[20px]" />
             </div>
 
             <div>
-              <h3 className="text-[15px] font-bold text-slate-950">
+              <h3 className="text-sm md:text-md font-bold text-slate-950">
                 Two-Factor Authentication
               </h3>
 
-              <p className="mt-1 text-[14px] font-medium text-slate-500">
+              <p className="mt-1 text-sm md:text-[14px] font-medium text-slate-500">
                 Add extra security
               </p>
             </div>

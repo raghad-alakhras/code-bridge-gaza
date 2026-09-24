@@ -17,7 +17,7 @@ export default function ProfileCard() {
         <div className="flex items-start gap-5">
 
           {/* Avatar */}
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-[18px] bg-white/20 text-xl font-extrabold">
+          <div className="flex md:size-16 size-12 shrink-0 items-center justify-center rounded-[18px] bg-white/20 text-md md:text-xl font-extrabold">
             AH
           </div>
 
