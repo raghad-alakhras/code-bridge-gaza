@@ -87,6 +87,12 @@ const smallServices = [
 ];
 
 
+const companyFeatures = [
+  "Submit job requests without creating an account",
+  "Provide complete job information including title, requirements, salary, and contact details",
+  "Every request is reviewed by the Administrator before publication",
+];
+
 
   return (
    <>
@@ -260,6 +266,78 @@ const smallServices = [
       </div>
     </section>
     {/* about section end */}
+
+    {/* CompaniesSection start */}
+    <section className="bg-gray-50 py-16 my-6">
+          <div className="mx-auto container px-18 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+            
+            {/* Left Side - Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-3/4">
+                <div className="absolute inset-0 rounded-[34px] bg-gradient-to-br from-blue-400/20 to-violet-500/20 blur-2xl" />
+
+                <div className="relative overflow-hidden rounded-[32px] shadow-2xl shadow-violet-200">
+                  <Image
+                    src="/images/companies-section.png"
+                    alt="Company team working together"
+                    width={420}
+                    height={520}
+                    className="h-[470px] w-full object-cover transition-all duration-300 hover:scale-105"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Content */}
+            <div className="max-w-2xl">
+              <span className="rounded-full border border-violet-200 bg-white px-4 py-2 text-xs font-bold text-violet-600 shadow-sm">
+                For Companies
+              </span>
+
+              <h2 className="mt-7 text-4xl font-extrabold leading-tight tracking-[-0.03em] text-slate-950 md:text-5xl">
+                Find the Right Talent
+                <br />
+
+                <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                  Post Your Job Today
+                </span>
+              </h2>
+
+              <p className="mt-7 max-w-2xl text-base font-medium leading-8 text-slate-500">
+                CodeBridge Gaza allows companies and job providers to submit job
+                requests through the platform without creating an account. Every
+                submitted request is reviewed by the Administrator before being
+                published, ensuring that developers can access relevant,
+                high-quality career opportunities.
+              </p>
+
+              {/* Features */}
+              <div className="mt-8 space-y-5">
+                {companyFeatures.map((feature) => (
+                  <div
+                    key={feature}
+                    className="flex items-start gap-3 text-sm font-semibold text-slate-900"
+                  >
+                    <FiCheckCircle className="mt-0.5 shrink-0 text-2xl text-violet-600" />
+
+                    <p className="leading-6">{feature}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Button */}
+              <Link
+                href="/add-job"
+                className="mt-8 inline-flex h-13 items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 px-8 text-sm font-extrabold text-white shadow-lg shadow-violet-300/70 transition hover:scale-[1.03]"
+              >
+                Post a Job
+                <FiArrowRight />
+              </Link>
+            </div>
+          </div>
+    </section>
+    {/* CompaniesSection end  */}
+
     {/* services card start */}
 
     <section id="features" className="bg-white px-6 py-24">
